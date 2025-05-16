@@ -1,3 +1,32 @@
+@media (max-width: 768px) {
+    /* Troca a imagem de fundo por uma otimizada para mobile */
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imagens/logo_mobile.png');
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Ajuste para a imagem de fundo da seção hero no mobile */
+    .hero {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -782,5 +811,31 @@ footer {
     
     .btn {
         width: 100%; /* Full width buttons on very small screens */
+    }
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+    max-width: 160px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
     }
 }
